@@ -2,10 +2,8 @@
 
 set -euo pipefail
 
-# This script will copy the dotfiles from the repository to the user's home directory.
-
+# copy dotfiles
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
 copy_dotfiles() {
     local src="$1"
     local dest="$2"
@@ -32,12 +30,12 @@ copy_dotfiles "$DOTFILES_DIR/.bash.d" "$HOME/.bash.d"
 
 copy_dotfiles "$DOTFILES_DIR/bash" "$HOME/"
 
-copy_dotfiles "$DOTFILES_DIR/common" "$HOME/"
-
 copy_dotfiles "$DOTFILES_DIR/git" "$HOME/"
 
 copy_dotfiles "$DOTFILES_DIR/gpg" "$HOME/.gnupg"
 
 copy_dotfiles "$DOTFILES_DIR/run-commands" "$HOME/"
 
+# copy whole directories
+copy_dotfiles "$DOTFILES_DIR/common" "$HOME/common"
 

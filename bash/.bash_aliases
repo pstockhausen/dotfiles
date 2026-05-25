@@ -16,3 +16,4 @@ alias h='history'
 
 # GPG
 alias gpg-sign='gpg --sign ~/common/gpg/dummy.txt'
+alias gpg-kill='gpgconf --kill gpg-agent'

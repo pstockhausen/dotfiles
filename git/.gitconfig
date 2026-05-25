@@ -21,6 +21,8 @@
 
 [commit]
     gpgsign = true
+[tag]
+    gpgSign = true
 
 [homebrew]
     donationmessage = false

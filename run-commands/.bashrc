@@ -16,12 +16,11 @@ bash_tools="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export bash_tools
 
 # shellcheck disable=SC1090,SC1091
-. "$bash_tools/.bash.d/os_detection.sh"
+. "$bash_tools/.bash.d/os-detection.sh"
 . "$bash_tools/.bash.d/welcome.sh"
 
 # enable color support for ls
-if [ "$TERM" != "dumb" ] && \
-   ! is_mac; then
+if [ "$TERM" != "dumb" ]; then
     eval "$(dircolors -b)"
 fi
 
@@ -148,6 +147,8 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
+# VSCODE
+export PATH="$PATH:/mnt/c/Users/stock/AppData/Local/Programs/Microsoft VS Code/bin"
 
 # Alias definitions
 if [ -f ~/.bash_aliases ]; then
@@ -191,3 +192,6 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# Brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"

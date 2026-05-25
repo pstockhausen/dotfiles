@@ -1,17 +1,5 @@
 #!/usr/bin/env bash
 #  vim:ts=4:sts=4:sw=4:et
-#
-#  Author: Hari Sekhon
-#  Date: circa 2010 - 2012 (forked from .bashrc)
-#
-#  https://github.com/HariSekhon/DevOps-Bash-tools
-#
-#  License: see accompanying Hari Sekhon LICENSE file
-#
-#  If you're using my code you're welcome to connect with me on LinkedIn and optionally send me feedback to help steer this or other code I publish
-#
-#  https://www.linkedin.com/in/HariSekhon
-#
 
 type is_linux &>/dev/null &&
 type isMac &>/dev/null &&
@@ -75,10 +63,6 @@ isAzureCloudShell(){
 # for compatibility to use the same names as non-interactive lib/
 is_linux(){
     isLinux
-}
-
-is_mac(){
-    isMac
 }
 
 is_google_cloud_shell(){
