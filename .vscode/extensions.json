@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "catppuccin.catppuccin-vsc",
+
+    "vscode-icons-team.vscode-icons",
+
+    "ms-vscode-remote.remote-wsl",
+    "ms-vscode-remote.remote-containers",
+
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "ms-python.vscode-python-envs",
+
+    "charliermarsh.ruff",
+
+    "eamodio.gitlens",
+
+    "usernamehw.errorlens",
+
+    "tamasfe.even-better-toml"
+  ]
+}

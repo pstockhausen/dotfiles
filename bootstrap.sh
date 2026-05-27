@@ -28,6 +28,8 @@ copy_dotfiles() {
 # Copy dotfiles to home directory
 copy_dotfiles "$DOTFILES_DIR/.bash.d" "$HOME/.bash.d"
 
+copy_dotfiles "$DOTFILES_DIR/.vscode" "$HOME/.vscode-server/data/Machine"
+
 copy_dotfiles "$DOTFILES_DIR/bash" "$HOME/"
 
 copy_dotfiles "$DOTFILES_DIR/git" "$HOME/"
@@ -38,4 +40,3 @@ copy_dotfiles "$DOTFILES_DIR/run-commands" "$HOME/"
 
 # copy whole directories
 copy_dotfiles "$DOTFILES_DIR/common" "$HOME/common"
-

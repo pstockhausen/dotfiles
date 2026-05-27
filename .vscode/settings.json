@@ -1,0 +1,31 @@
+{
+  "editor.fontSize": 16,
+  "editor.fontFamily": "JetBrains Mono, monospace",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.5,
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "terminal.integrated.fontSize": 14,
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "git.autofetch": true,
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic"
+}
